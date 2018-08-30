@@ -1,0 +1,53 @@
+{
+  "name": "content-editable-html-stripper",
+  "version": "1.0.0",
+  "description": "Handler to remove HTML from text pasted into a contenteditable div element on paste",
+  "main": "distribution/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexZielonko/content-editable-html-stripper.git"
+  },
+  "keywords": [
+    "contenteditable",
+    "content",
+    "editable",
+    "html",
+    "stripper",
+    "remove",
+    "strip",
+    "paste",
+    "event",
+    "clipboardData",
+    "onPaste"
+  ],
+  "author": "Alex Zielonko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexZielonko/content-editable-html-stripper/issues"
+  },
+  "homepage": "https://github.com/alexZielonko/content-editable-html-stripper#readme",
+  "scripts": {
+    "build": "babel src --out-dir distribution",
+    "coverage": "jest --coverage",
+    "precommit": "npx precise-commits --verbose",
+    "prepublish": "npm run build",
+    "prepush": "npm run test",
+    "test": "jest",
+    "testWatch": "jest --watchAll"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.2",
+    "babel-preset-env": "^1.7.0",
+    "husky": "^0.14.3",
+    "jest-cli": "^23.5.0",
+    "precise-commits": "^1.0.2",
+    "prettier": "^1.14.2"
+  },
+  "jest": {
+    "transform": {
+      ".*": "<rootDir>/node_modules/babel-jest"
+    }
+  }
+}

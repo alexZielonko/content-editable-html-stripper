@@ -1,0 +1,14 @@
+node_modules
+src
+
+# Test directories
+coverage
+test
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Files that may appear on external disks
+.Spotlight-V100
+.Trashes
