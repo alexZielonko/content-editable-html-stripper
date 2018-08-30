@@ -1,8 +1,9 @@
 # content-editable-html-stripper
 
-This package contains a convenient function to remove HTML-like entities from a string on paste. You may find it useful when working with [`contenteditable` ](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable) elements.
+[![Build Status](https://travis-ci.org/alexZielonko/content-editable-html-stripper.svg?branch=master)](https://travis-ci.org/alexZielonko/content-editable-html-stripper)
+[![npm Version](https://img.shields.io/badge/npm-v1.0.1-blue.svg)](https://www.npmjs.com/package/tag-wrapper)
 
-This uses [`clipboardData`](https://developer.mozilla.org/en-US/docs/Web/API/ClipboardEvent/clipboardData). Although `clipboardData` is an exprimental technology, it is widely supported.
+This package contains a convenient function to remove HTML-like entities from a string on paste events to [`contenteditable` ](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable) elements. This uses [`clipboardData`](https://developer.mozilla.org/en-US/docs/Web/API/ClipboardEvent/clipboardData). Although `clipboardData` is an exprimental technology, it is widely supported by modern browsers.
 
 ## Installation
 
@@ -52,6 +53,8 @@ function BlockQuote (props) {
     />
   )
 }
+
+export default BlockQuote
 ```
 
 Yeah, it's magic 💫
