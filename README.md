@@ -13,17 +13,9 @@ npm install content-editable-html-stripper --save
 
 ## Usage
 
-To strip HTML-like entites from content pasted into a `contenteditable` container,
-
-```js
-import { handlePaste } from 'content-editable-html-stripper'
-```
-
-## API
-
 ### `handlePaste(event)`
 
-Insert string into focused `contenteditable` element with HTML-like entities removed from pasted string.
+Remove HTML-like entities from string before inserting into focused `contenteditable` element.
 
 #### Vanilla
 
@@ -34,7 +26,11 @@ Insert string into focused `contenteditable` element with HTML-like entities rem
 ```
 
 ```js
-document.getElementsByTagName('blockquote')[0].addEventListener('paste', handlePaste)
+import { handlePaste } from 'content-editable-html-stripper'
+
+document
+  .getElementsByTagName('blockquote')[0]
+  .addEventListener('paste', handlePaste)
 ```
 
 #### React
