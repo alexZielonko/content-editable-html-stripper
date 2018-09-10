@@ -40,8 +40,6 @@ import React from 'react'
 import { handlePaste } from 'content-editable-html-stripper'
 
 function BlockQuote (props) {
-  const { onPaste } = props
-
   return (
     <blockquote
       contenteditable='true'
